@@ -70,8 +70,9 @@ header {
   justify-content: space-between;
   padding: 1.7rem 10%;
   height: 6.5rem;
+  border-bottom:  2px solid #3A87BF;
   background-color: #d7c8c8;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  box-shadow: 0 4px 4px rgba(146, 161, 176, 0.3);
 }
 section {
   min-height: 100vh;
@@ -83,14 +84,12 @@ section {
   font-weight: 800;
   text-align: center;
 }
-.heading span {
-  color: rgb(115, 3, 167);
-}
+
 header .logo {
-  font-size: 1.9rem;
+  font-size: 2.5rem;
   font-weight: 800;
   text-decoration: none;
-  color: #0e2431;
+  color: #117dbb;
 }
 header .logo i {
   font-size: 2.2rem;
@@ -118,7 +117,7 @@ header .navbar ul li a {
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
   color: #011aff;
-  border-bottom: 0.2rem solid #011aff;
+  border-bottom: 0.2rem solid #d69c50;
   padding: 0.5rem 0;
 }
 /* navbar ends */
@@ -142,7 +141,7 @@ header .navbar ul li a:hover {
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #0e0f31;
+    background-color: #0604a1;
   }
   header .navbar ul {
     flex-flow: column;
@@ -266,11 +265,11 @@ text-decoration-line: underline;
   width: 70%;
   margin-left: 6rem;
   border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(244, 49, 49, 0.3);
+  box-shadow: 0 5px 9px rgba(244, 49, 49, 0.3);
   cursor: pointer;
 }
 .home .image img:hover {
-  box-shadow: 0 5px 15px rgba(219, 43, 43, 0.5);
+  box-shadow: 0 9px 15px rgba(219, 43, 43, 0.5);
 }
 .home .content h2 {
   font-size: 5rem;
@@ -280,7 +279,7 @@ text-decoration-line: underline;
 .home .content h2 span {
   font-size: 5rem;
   font-weight: 800;
-  color: #8c4808;
+  color: #137ed1;
 }
 .home .content p {
   font-size: 2.5rem;
@@ -290,7 +289,7 @@ text-decoration-line: underline;
 }
 .home .content p span {
   font-size: 2.5rem;
-  color: rgb(148, 8, 8);
+  color: rgb(18, 137, 193);
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -299,11 +298,11 @@ text-decoration-line: underline;
   position: absolute;
   line-height: 0;
   padding: 1.6rem 3rem;
-  border-radius: 4em;
+  border-radius: 6em;
   transition: 0.5s;
   color: #fff;
   background: #2506ad;
-  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+  box-shadow: 0px 5px 18px rgba(166, 46, 6, 0.6);
   font-family: "Nunito", sans-serif;
 }
 .home .btn span {
@@ -402,12 +401,12 @@ text-decoration-line: underline;
   height: auto;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(225, 29, 29, 0.6);
-  mix-blend-mode: luminosity;
+  mix-blend-mode:lighten-alpha;
   transition: 0.3s;
   cursor: pointer;
 }
 .about .row .image img:hover {
-  mix-blend-mode: normal;
+  mix-blend-mode:color-lighten-alpha;
 }
 .about .row .content {
   flex: 1 1 45rem;
@@ -573,7 +572,7 @@ text-decoration-line: underline;
 
 /* education section starts */
 .education {
-  background: #596683;
+  background: #3ec2e0;
   min-height: 80vh;
 }
 .education .qoute {
@@ -799,6 +798,11 @@ text-decoration-line: underline;
 /* work section ends */
 
 /* experience section starts */
+.experience{
+  background: #eadddd;
+  min-height: 50vh;
+
+}
 .experience .timeline {
   position: relative;
   max-width: 1200px;
@@ -808,7 +812,7 @@ text-decoration-line: underline;
   content: "";
   position: absolute;
   width: 6px;
-  background: #020133;
+  background: #ddbfad;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -829,7 +833,7 @@ text-decoration-line: underline;
   height: 25px;
   right: -17px;
   background-color: rgb(255, 255, 255);
-  border: 4px solid #ff9f55;
+  border: 4px solid #138ebb;
   top: 15px;
   border-radius: 50%;
   z-index: 100;
@@ -854,7 +858,7 @@ text-decoration-line: underline;
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #f68c09;
+  border: medium solid #393530;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #f68c09;
 }
@@ -867,17 +871,18 @@ text-decoration-line: underline;
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #f68c09;
+  border: medium solid #362e24;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #f68c09 transparent transparent;
+  border-color: transparent #e98310 transparent transparent;
 }
 .experience .right::after {
   left: -16px;
 }
 .experience .content {
-  background-color: #f68c09;
+  background-color: #d6649b;
+  
   position: relative;
-  border-radius: 6px;
+  border-radius: 60px;
 }
 .experience .content .tag {
   font-size: 1.3rem;
@@ -896,42 +901,12 @@ text-decoration-line: underline;
   font-size: 1.2rem;
 }
 /* view all button */
-.morebtn {
-  display: flex;
-  justify-content: center;
-}
-.morebtn .btn {
-  position: relative;
-  line-height: 0;
-  padding: 1.6rem 3rem;
-  border-radius: 0.5em;
-  transition: 0.5s;
-  color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
-  text-align: center;
-}
-.morebtn .btn span {
-  font-weight: 600;
-  font-size: 1.7rem;
-  font-family: "Nunito", sans-serif;
-}
-.morebtn .btn i {
-  margin-left: 0.3rem;
-  font-size: 1.5rem;
-  transition: 0.3s;
-}
-.morebtn .btn:hover {
-  background: #1a047e;
-}
-.morebtn .btn:hover i {
-  transform: translateX(5px);
-}
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
   .experience {
-    min-height: 80vh;
+    min-height: 40vh;
   }
   .experience .timeline {
     margin-top: 2rem;
@@ -1017,7 +992,7 @@ form i {
   position: absolute;
   top: 50%;
   left: 18px;
-  color: rgb(51, 51, 51);
+  color: rgb(11, 37, 166);
   font-size: 17px;
   pointer-events: none;
   transform: translateY(-50%);
@@ -1130,7 +1105,7 @@ form .button-area {
 .footer {
   min-height: auto;
   padding-top: 0;
-  background: rgb(73, 75, 223);
+  background:#DB84AC;
 }
 .footer .box-container {
   display: flex;
@@ -1149,7 +1124,7 @@ form .button-area {
 }
 .footer .box-container .box p {
   font-size: 1.5rem;
-  color: #ccc;
+  color: #ffffff;
   padding: 0.7rem 0;
   text-transform: none;
 }
@@ -1190,24 +1165,7 @@ form .button-area {
   border: 0.1rem solid rgb(180, 178, 178);
   color: #ffae00;
 }
-.footer .credit {
-  padding: 1rem 0 0 0;
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  color: #fff;
-  border-top: 0.1rem solid #fff3;
-}
-.footer .credit a {
-  color: #ffae00;
-}
-.footer .fa {
-  color: #e90606;
-  margin: 0 0.3rem;
-  font-size: 1.5rem;
-  animation: pound 0.35s infinite alternate;
-}
+
 @-webkit-keyframes pound {
   to {
     transform: scale(1.1);
@@ -1252,13 +1210,13 @@ form .button-area {
   right: 2rem;
   padding: 1rem 1.5rem;
   font-size: 2rem;
-  background: #ffae00;
+  background: #eadbdb;
   color: rgb(13, 0, 44);
   border-radius: 50%;
   transition: 1s linear;
   z-index: 1000;
   hover {
-    background: #b4ab98;
+    background: #de9b0a;
     
   }
 }
