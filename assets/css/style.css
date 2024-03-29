@@ -1,4 +1,4 @@
- @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
 * {
@@ -293,54 +293,33 @@ text-decoration-line: underline;
   font-weight: 600;
   padding: 1rem 0;
 }
-.box {
-  position: relative;
-  width: 120px;
-  height: 45px;
-  overflow: hidden;
-  border: none;
-  background-color: rgb(116, 0, 145);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border-top-left-radius: 20px;
-  cursor: pointer;
-  border-bottom-right-radius: 20px;
-  box-shadow: 0 0 10px rgb(104, 134, 218);
-}
-
-.box::before {
-  content: "";
+.home .btn {
+  margin-top: 1rem;
   position: absolute;
-  width: 15px;
-  height: 200px;
-  margin-top: -92px;
-  background: linear-gradient(#00ccff,#d400d4);
-  animation: amm 4s linear infinite;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 6em;
+  transition: 0.5s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 18px rgba(166, 46, 6, 0.6);
+  font-family: "Nunito", sans-serif;
 }
-
-@keyframes amm {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+.home .btn span {
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
 }
-
-.text-button {
-  position: relative;
-  font-size: 1.2rem;
-  font-weight: bold;
-  z-index: 1;
+.home .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
 }
-
-.box::after {
-  content: "";
-  position: absolute;
-  inset: 4px;
-  background-color: rgb(218, 203, 177);
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+.home .btn:hover {
+  background: #1a047e;
+}
+.home .btn:hover i {
+  transform: translateX(5px);
 }
 /* social icons start */
 .socials {
